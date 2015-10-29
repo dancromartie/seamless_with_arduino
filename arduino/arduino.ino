@@ -13,7 +13,7 @@ void sendLight(int lightVal) {
   url += lightVal;
   p.addParameter(url);
   p.run();
-  while(p.available() > 0){
+  while (p.available()>0) {
     char c = p.read();
   }
 }
